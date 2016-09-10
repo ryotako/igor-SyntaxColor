@@ -126,12 +126,12 @@ static Function/S MenuItemColorscheme(i)
 	endif
 End
 static Function DefaultColorscheme()
-	Execute/P "SetIgorOption colorize,keywordColor=(0,0,65535)"
-	Execute/P "SetIgorOption colorize,commentColor=(65535,0,0)"
-	Execute/P "SetIgorOption colorize,stringColor=(0,40000,0)"
-	Execute/P "SetIgorOption colorize,operationColor=(0,30000,30000)"
-	Execute/P "SetIgorOption colorize,functionColor=(50000,20000,0)"
-	Execute/P "SetIgorOption colorize,poundColor=(52428,1,41942)"
+	Execute/Z "SetIgorOption colorize,keywordColor=(0,0,65535)"
+	Execute/Z "SetIgorOption colorize,commentColor=(65535,0,0)"
+	Execute/Z "SetIgorOption colorize,stringColor=(0,40000,0)"
+	Execute/Z "SetIgorOption colorize,operationColor=(0,30000,30000)"
+	Execute/Z "SetIgorOption colorize,functionColor=(50000,20000,0)"
+	Execute/Z "SetIgorOption colorize,poundColor=(52428,1,41942)"
 End
 
 ////////////////////////////////////////
