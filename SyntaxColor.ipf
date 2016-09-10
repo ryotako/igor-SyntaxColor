@@ -158,7 +158,7 @@ End
 static Function rgb16(group,r,g,b)
 	String group; Variable r,g,b
 	String cmd
-	sprintf cmd,"SetIgorOption colorscheme,%sColor=(%d,%d,%d)",group,r,g,b
+	sprintf cmd,"SetIgorOption colorize,%sColor=(%d,%d,%d)",group,r,g,b
 	Execute/Z cmd
 End
 
