@@ -10,10 +10,12 @@ You can change syntax highlighting colors and save them as a macro from the menu
 ## Functions
 This procedure provides some functions to change syntax highlighting colors.
 
-- SyntaxColor#rgb16(String syntax_group, Variable red, Variable green, Variable blue)
-- SyntaxColor#rgb8(String syntax_group, Variable red, Variable green, Variable blue)
+- SyntaxColor#rgb16(String syntax_group, Variable red_16bit, Variable green_16bit, Variable blue_16bit)
+- SyntaxColor#rgb8(String syntax_group, Variable red_8bit, Variable green_8bit, Variable blue_8bit)
 -	SyntaxColor#hex(String syntax_group, String hex_triplet)
 -	SyntaxColor#x11(String syntax_group, String x11_color_name)
+
+Syntax groups in Igor Pro are `keyword`, `comment`,`string`,`operation`,`function`, and `pound`.
 
 ### Example
 ```
