@@ -1,9 +1,9 @@
 #pragma ModuleName=SyntaxColor
-strconstant SyntaxColorMenu="SyntaxColor"
+strconstant SyntaxColor_Menu="SyntaxColor"
 
 // Menu
-Menu StringFromList(0,SyntaxColorMenu)
-	RemoveListItem(0,SyntaxColorMenu)
+Menu StringFromList(0,SyntaxColor_Menu)
+	RemoveListItem(0,SyntaxColor_Menu)
 	SubMenu SyntaxColor#MenuTitleSetColor("keyword")
 		SyntaxColor#MenuItemSetColor("keyword"),/Q,SyntaxColor#MenuCommandSetColor("keyword")
 	End
@@ -147,6 +147,7 @@ End
 
 static Function hex(group,code)
 	String group, code
+	code = SelectString(cmpstr(code[0],"#"),code[1,inf],code)
 	rgb8(group, Str2Num("0x"+code[0,1]), Str2Num("0x"+code[2,3]), Str2Num("0x"+code[4,5]))
 End
 
