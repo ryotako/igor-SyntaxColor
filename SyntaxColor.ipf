@@ -89,7 +89,6 @@ static Function/S colorschemeCommand(group)
 	String group
 	WAVE w=capture(group)
 	String cmd
-	print w
 	sprintf cmd,"SetIgorOption colorize,%sColor=(%d,%d,%d)",group,w[0],w[1],w[2]
 	return cmd
 End
