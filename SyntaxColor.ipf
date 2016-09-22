@@ -117,7 +117,7 @@ End
 // Change colorscheme from the menu bar
 static Function/S MenuItemColorscheme(i)
 	Variable i
-	String list=MacroList("Colorscheme_*",";","NPARAMS:0")
+	String list=MacroList("Colorscheme*",";","NPARAMS:0")+FunctionList("Colorscheme_*",";","NPARAMS:0")
 	if(i<ItemsInList(list))
 		return StringFromList(i,list)
 	else
